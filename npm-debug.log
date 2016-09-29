@@ -1,0 +1,116 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\Administrator.GISTC\\helloworld',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache\mikecgit\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 verbose tar pack [ 'C:\\Users\\Administrator.GISTC\\AppData\\Roaming\\npm-cache\\mikecgit\\1.0.0\\package.tgz',
+10 verbose tar pack   'C:\\Users\\Administrator.GISTC\\helloworld' ]
+11 verbose tarball C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache\mikecgit\1.0.0\package.tgz
+12 verbose folder C:\Users\Administrator.GISTC\helloworld
+13 info prepublish mikecgit@1.0.0
+14 verbose addLocalTarball adding from inside cache C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache\mikecgit\1.0.0\package.tgz
+15 verbose correctMkdir C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+16 silly cache afterAdd mikecgit@1.0.0
+17 verbose afterAdd C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache\mikecgit\1.0.0\package\package.json not in flight; writing
+18 verbose correctMkdir C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+19 verbose afterAdd C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache\mikecgit\1.0.0\package\package.json written
+20 silly publish { name: 'mikecgit',
+20 silly publish   version: '1.0.0',
+20 silly publish   description: 'this is Hello World project.',
+20 silly publish   main: 'index.js',
+20 silly publish   scripts: { test: 'mocha --reporter nyan' },
+20 silly publish   repository:
+20 silly publish    { type: 'git',
+20 silly publish      url: 'git+https://github.com/mikecgit/helloworld.git' },
+20 silly publish   keywords: [ 'hello', 'world' ],
+20 silly publish   author: { name: 'mike' },
+20 silly publish   license: 'ISC',
+20 silly publish   bugs: { url: 'https://github.com/mikecgit/helloworld/issues' },
+20 silly publish   homepage: 'https://github.com/mikecgit/helloworld#readme',
+20 silly publish   devDependencies:
+20 silly publish    { chai: '^3.5.0',
+20 silly publish      gulp: '^3.9.1',
+20 silly publish      'gulp-concat': '^2.6.0',
+20 silly publish      'gulp-jshint': '^2.0.1',
+20 silly publish      'gulp-rename': '^1.2.2',
+20 silly publish      'gulp-sass': '^2.3.2',
+20 silly publish      'gulp-uglify': '^2.0.0',
+20 silly publish      jshint: '^2.9.3',
+20 silly publish      mocha: '^3.1.0' },
+20 silly publish   readme: 'HelloWorld\r\n=========\r\n\r\nA small library providing utility methods to `escape` and `unescape` HTML entities\r\n\r\n## Installation\r\n\r\n  npm install HelloWorld --save\r\n\r\n## Usage\r\n\r\n  var HelloWorld = require(\'HelloWorld\')\r\n      escape = HelloWorld.escape,\r\n      unescape = HelloWorld.unescape;\r\n\r\n  var html = \'<h1>Hello World</h1>\',\r\n      escaped = escape(html),\r\n      unescaped = unescape(escaped);\r\n\r\n  console.log(\'html\', html, \'escaped\', escaped, \'unescaped\', unescaped);\r\n\r\n## Tests\r\n\r\n  npm test\r\n\r\n## Contributing\r\n\r\nIn lieu of a formal styleguide, take care to maintain the existing coding style.\r\nAdd unit tests for any new or changed functionality. Lint and test your code.\r\n\r\n## Release History\r\n\r\n* 0.1.0 Initial release',
+20 silly publish   readmeFilename: 'README.md',
+20 silly publish   gitHead: 'c5cf9cd5883dc8dee3ca3317c6c435340688e1ae',
+20 silly publish   _id: 'mikecgit@1.0.0',
+20 silly publish   _shasum: 'b5b286219175682e91b2bad4d293d2c8a0a37f4a',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name mikecgit
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'mikecgit',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'mikecgit',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/mikecgit
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache\mikecgit\1.0.0\package.tgz
+29 verbose request uri https://registry.npmjs.org/mikecgit
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 11:32:32 PM
+32 verbose request using bearer token for auth
+33 verbose request id aa80e46a420afe1d
+34 http request PUT https://registry.npmjs.org/mikecgit
+35 http 403 https://registry.npmjs.org/mikecgit
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Thu, 29 Sep 2016 03:32:33 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-iad2624-IAD',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1475119952.719381,VS0,VE602',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating C:\Users\Administrator.GISTC\AppData\Roaming\npm-cache\registry.npmjs.org\mikecgit on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : mikecgit
+39 verbose stack     at makeError (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+39 verbose stack     at Request._callback (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+39 verbose stack     at Request.self.callback (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+40 verbose statusCode 403
+41 verbose pkgid mikecgit
+42 verbose cwd C:\Users\Administrator.GISTC\helloworld
+43 error Windows_NT 6.3.9600
+44 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+45 error node v4.5.0
+46 error npm  v2.15.9
+47 error code E403
+48 error "You cannot publish over the previously published version 1.0.0." : mikecgit
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
